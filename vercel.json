@@ -9,7 +9,7 @@
     "routes":[
         {
             "src":"/(.*)",
-            "dest":"https://email-sender-nodejs-one.vercel.app/email"
+            "dest":"/email"
         }
     ]
     
