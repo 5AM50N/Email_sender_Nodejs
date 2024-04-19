@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.static(__dirname+"/public"));
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended: false}));
-app.get("/",(req,res)=>{
+app.get("/email",(req,res)=>{
     res.sendFile(__dirname+"/index.html");
 });
 app.post("/send",(req,res)=>{
@@ -34,7 +34,7 @@ app.post("/send",(req,res)=>{
         html: message,
         subject: subject,
     },(err)=>{console.log(err)});
-    res.redirect("http://localhost:3000");
+    res.redirect("http://localhost:3000/email");
 });
 app.listen(port, (err)=>{
     if(err)
