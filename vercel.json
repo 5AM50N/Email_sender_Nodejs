@@ -11,5 +11,11 @@
             "src":"/(.*)",
             "dest":"./email"
         }
-    ]
+    ],
+    "rewrites": [
+        {
+          "source": "/(.*)",
+          "destination": "/email"
+        }
+      ]
 }
