@@ -34,7 +34,7 @@ app.post("/send",(req,res)=>{
         html: message,
         subject: subject,
     },(err)=>{console.log(err)});
-    res.redirect("https://email-sender-nodejs-theta.vercel.app/");
+    // res.redirect("https://email-sender-nodejs-theta.vercel.app/");
 });
 app.listen(port, (err)=>{
     if(err)
